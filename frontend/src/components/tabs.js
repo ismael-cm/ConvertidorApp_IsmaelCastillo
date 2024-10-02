@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons } from '@expo/vector-icons';
 import Home from '../screens/HomeScreen'
-import Menu from '../screens/HistoryScreen'
+import History from '../screens/HistoryScreen'
 
 export default function Tabs() {
     const Tab = createBottomTabNavigator();
@@ -31,8 +31,8 @@ export default function Tabs() {
         
                     if (route.name === 'home') {
                       iconName = 'home';
-                    } else if (route.name === 'menu') {
-                      iconName = 'menu';
+                    } else if (route.name === 'history') {
+                      iconName = 'history';
                     }
                     //   <Icon name={iconName} size={size} color={color} />
                     return <MaterialIcons name={iconName} size={size} color="#555"  style={{color: color}} />;
@@ -43,7 +43,7 @@ export default function Tabs() {
             })}
         >
             <Tab.Screen name="home" component={Home} />
-            <Tab.Screen name="menu" component={Menu} />
+            <Tab.Screen name="history" component={History} />
         </Tab.Navigator>
     );
 }
