@@ -17,8 +17,11 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes:
    ```bash
    git clone https://github.com/tu-usuario/tu-repositorio.git
 
-```bash
-npm install
+2. Instalar dependencias:
 
-```bash
-npm start
+   ```bash
+   npm install
+
+3. Iniciar proyecto:
+   ```bash
+   npm start
